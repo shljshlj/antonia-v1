@@ -1,0 +1,125 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: #ffffff;
+  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='800' height='800'%3E%3Cpath fill='%23b2e7f6' fill-opacity='1' d='M14 16H9v-2h5V9.87a4 4 0 1 1 2 0V14h5v2h-5v15.95A10 10 0 0 0 23.66 27l-3.46-2 8.2-2.2-2.9 5a12 12 0 0 1-21 0l-2.89-5 8.2 2.2-3.47 2A10 10 0 0 0 14 31.95V16zm40 40h-5v-2h5v-4.13a4 4 0 1 1 2 0V54h5v2h-5v15.95A10 10 0 0 0 63.66 67l-3.47-2 8.2-2.2-2.88 5a12 12 0 0 1-21.02 0l-2.88-5 8.2 2.2-3.47 2A10 10 0 0 0 54 71.95V56zm-39 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm40-40a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM15 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm40 40a2 2 0 1 0 0-4 2 2 0 0 0 0 4z'%3E%3C/path%3E%3C/svg%3E"); */
+  /* background-image: url('assets/icons/anchors(2).svg'); */
+  /* background-image: url('assets/icons/anchors.svg'); */
+  background-size: 50%;
+  /* background-position: 20%; */
+  background: linear-gradient(to bottom, #fff, rgb(153, 201, 216));
+}
+
+body {
+  font-family: 'Assistant', sans-serif;
+  font-size: 1.8rem;
+  min-height: 100vh;
+  margin: 0;
+}
+
+@media (min-width: 48em) {
+  body {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 62em) {
+  body {
+    font-size: 2.5rem;
+  }
+}
+
+p {
+  line-height: 4rem;
+}
+
+.header-container {
+  margin: 0 auto;
+  max-width: 100%;
+  max-width: 1200px;
+}
+
+.name {
+  font-size: 6vw;
+  font-weight: 400;
+}
+
+.name strong {
+  font-weight: 600;
+}
+
+.name span {
+  display: block;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 90%;
+  padding: 2rem 1rem;
+}
+
+@media (min-width: 43em) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 48em) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media (min-width: 62em) {
+  .container {
+    width: 60%;
+  }
+}
+
+@media (min-width: 82em) {
+  .container {
+    width: 50%;
+  }
+}
+
+.navigation__list {
+  display: flex;
+  padding: 2rem;
+}
+
+.navigation__item:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.section {
+  border-bottom: 1px solid #000000;
+  padding: 2rem;
+  margin: 20px 0;
+}
+
+.portrait {
+  display: block;
+  background-image: url('assets/images/1f126364-fd44-48cc-bae6-09378f797001.jfif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
