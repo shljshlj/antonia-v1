@@ -8,6 +8,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -46,25 +47,6 @@ p {
   line-height: 4rem;
 }
 
-.header-container {
-  margin: 0 auto;
-  max-width: 100%;
-  max-width: 1200px;
-}
-
-.name {
-  font-size: 6vw;
-  font-weight: 400;
-}
-
-.name strong {
-  font-weight: 600;
-}
-
-.name span {
-  display: block;
-}
-
 .container {
   margin: 0 auto;
   max-width: 90%;
@@ -93,15 +75,6 @@ p {
   .container {
     width: 50%;
   }
-}
-
-.navigation__list {
-  display: flex;
-  padding: 2rem;
-}
-
-.navigation__item:not(:last-child) {
-  margin-right: 3rem;
 }
 
 .section {
