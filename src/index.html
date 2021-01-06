@@ -20,36 +20,52 @@
   <meta property="og:image" content="https://www.nannyberlin.com/images/social-cover.png">
   <meta property="og:description" content="Personal website of Antonia Stipic, nanny living in Berlin">
   <meta property="og:url" content="https://www.nannyberlin.com">
+
   <meta name="twitter:title" content="Nanny Berlin">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:description" content="Personal website of Antonia Stipic, nanny living in Berlin">
   <meta property="twitter:image" content="https://www.nannyberlin.com/images/social-cover.png">
   <!-- END of SEO -->
 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600&display=swap" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="style.css"> -->
 
   <!-- Google Analytics-->
 </head>
 
 <body>
-  <div>
-    <nav class="navigation">
-      <ul class="navigation__list">
-        <li class="navigation__item"><a href="#about">About</a></li>
-        <li class="navigation__item"><a href="#work">Work</a></li>
-        <li class="navigation__item"><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <header id="intro" class="section">
-      <div class="header-container">
-        <h1 class="name">
-          <span>Hello, I am <strong>Antonia Stipic</strong>,</span>
-          <span>a childcare worker living in Berlin</span>
-        </h1>
-      </div>
+  <div class="layout__base">
+    <header>
+      <nav class="navigation">
+        <div class="container">
+          <div class="grid">
+            <div class="column-xs-12 column-sm-6">
+              <div class="logo">
+                <a href="/">NannyBerlin</a>
+              </div>
+            </div>
+            <div class="column-xs-12 column-sm-6">
+              <ul class="navigation__list">
+                <li class="navigation__item"><a href="#about">About</a></li>
+                <li class="navigation__item"><a href="#work">Work</a></li>
+                <li class="navigation__item"><a href="#education">Education</a></li>
+                <li class="navigation__item"><a href="mailto:antonia.stipic@gmail.com">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
     <main class="main-content">
+
+      <section id="intro" class="section hero">
+        <h1 class="title">
+          <span class="title__name">Hi, I am Antonia Stipic,</span>
+          <span class="title__description">a <strong data-text="berliner nanny">berliner nanny</strong></span>
+        </h1>
+      </section>
+
       <section id="about" class="section">
         <div class="container">
           <div class="about__text">
@@ -154,7 +170,7 @@
         </div>
       </section>
 
-      <section id="background" class="section">
+      <section id="education" class="section">
         <div class="container">
           <div class="education">
             <h3>Formal Education</h3>
@@ -180,35 +196,12 @@
           </div>
         </div>
       </section>
-
-      <section id="contact" class="section">
-        <div class="container">
-          <h2>Contact</h2>
-          <form name="contact" method="POST" netlify>
-            <div>
-              <input name="name" id="name" type="text" required>
-              <label for="name">Your name</label>
-            </div>
-            <div>
-              <input name="email" id="email" type="email" required>
-              <label for="email">Your email</label>
-            </div>
-            <div>
-              <textarea name="message" id="message" cols="40" rows="10" class=""></textarea required>
-              <label for="message">Message</label>
-            </div>
-            <div>
-              <button type="submit">Send</button>
-            </div>
-          </form>
-        </div>
-      </section>
     </main>
     <footer>
-  
+
     </footer>
   </div>
-  
+
 </body>
 
 </html>

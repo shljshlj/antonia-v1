@@ -1,18 +1,73 @@
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+:root {
+  --bg-color-blue: #287599;
+  --bg-color-pink: #794162;
+  --bg-color-green: #ebffd2;
+
+  --color-light: rgb(248, 218, 218);
+
+  --color-white: #fff;
+  --color-gray: #727483;
+  --color-black: #282b42;
+  --color-light-pink: #f6f1f4;
+  --color-dark-body: #23273a;
+  --color-dark-text: #b8b7d1;
+  --color-dark-nav-link: #9694ba;
+  --color-border: #ebecf2;
+  --color-dark-border: #3b3d54;
+  --link-color: #256798;
+  --link-color-dark: #215c88;
+  --link-dark-color: #f1b1eb;
+  --link-dark-color-light: #f6c1f0;
+  --link-underline-color: #add7ea;
+  --link-underline-color-light: #bcdceb;
+  --link-underline-color-lighter: #c6e4f2;
+  --link-underline-dark-color: #675682;
+  --link-underline-dark-color-dark: #61517a;
+  --link-underline-dark-color-darker: #5e4e75;
+
+  --font-sans: 'Calibre', 'San Francisco', 'SF Pro Text', -apple-system,
+    system-ui, sans-serif;
+  --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+
+  --fz-xxs: 12px;
+  --fz-xs: 13px;
+  --fz-sm: 14px;
+  --fz-md: 16px;
+  --fz-lg: 18px;
+  --fz-xl: 20px;
+  --fz-xxl: 22px;
+  --fz-heading: 32px;
+
+  --border-radius: 4px;
+  --nav-height: 100px;
+  --nav-scroll-height: 70px;
+
+  --tab-height: 42px;
+  --tab-width: 120px;
+
+  --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 html {
-  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px
   scroll-behavior: smooth;
 }
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -21,64 +76,85 @@ a {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: var(--bg-color-blue);
+  color: var(--color-light);
 }
 
 body {
   font-family: 'Assistant', sans-serif;
-  font-size: 1.8rem;
+  font-size: var(--fz-lg);
   min-height: 100vh;
   margin: 0;
-}
+  line-height: 1.5;
 
-@media (min-width: 48em) {
-  body {
-    font-size: 2rem;
-  }
-}
-
-@media (min-width: 62em) {
-  body {
-    font-size: 2.5rem;
+  @media (min-width: 48em) {
+    font-size: var(--fz-xl);
   }
 }
 
 p {
-  line-height: 4rem;
+  line-height: 1.5;
 }
+
+// .container {
+//   margin: 0 auto;
+//   max-width: 90%;
+//   padding: 2rem 1rem;
+// }
+
+// @media (min-width: 43em) {
+//   .container {
+//     width: 80%;
+//   }
+// }
+
+// @media (min-width: 48em) {
+//   .container {
+//     width: 70%;
+//   }
+// }
+
+// @media (min-width: 62em) {
+//   .container {
+//     width: 60%;
+//   }
+// }
+
+// @media (min-width: 82em) {
+//   .container {
+//     width: 50%;
+//   }
+// }
 
 .container {
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  padding: 0 16px;
+}
+
+.main-content {
   margin: 0 auto;
-  max-width: 90%;
-  padding: 2rem 1rem;
-}
+  width: 100%;
+  max-width: 1600px;
+  min-height: 100vh;
+  padding: 0 25px;
 
-@media (min-width: 43em) {
-  .container {
-    width: 80%;
+  @media (min-width: 480px) {
+    padding: 0 50px;
   }
-}
 
-@media (min-width: 48em) {
-  .container {
-    width: 70%;
+  @media (min-width: 768px) {
+    padding: 0 100px;
   }
-}
 
-@media (min-width: 62em) {
-  .container {
-    width: 60%;
-  }
-}
-
-@media (min-width: 82em) {
-  .container {
-    width: 50%;
+  @media (min-width: 1080px) {
+    padding: 0 150px;
   }
 }
 
 .section {
-  border-bottom: 1px solid #000000;
-  padding: 2rem;
-  margin: 20px 0;
+  border-bottom: 1px dashed purple;
+  padding: 100px 0;
 }
