@@ -12,7 +12,7 @@
     "build": "NODE_ENV=production webpack --config config/webpack.prod.js",
     "build-gh": "NODE_ENV=production webpack --config config/webpack.prod-gh.js",
     "deploy-gh": "gh-pages -d dist",
-    "gh": "build-gh && deploy-gh"
+    "gh": "yarn run build-gh && yarn run deploy-gh"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
