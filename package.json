@@ -11,7 +11,8 @@
     "start": "NODE_ENV=development webpack serve --config config/webpack.dev.js",
     "build": "NODE_ENV=production webpack --config config/webpack.prod.js",
     "build-gh": "NODE_ENV=production webpack --config config/webpack.prod-gh.js",
-    "deploy-gh": "gh-pages -d dist"
+    "deploy-gh": "gh-pages -d dist",
+    "gh": "build-gh && deploy-gh"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
