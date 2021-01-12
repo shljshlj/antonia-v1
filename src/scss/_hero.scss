@@ -16,12 +16,16 @@
   color: #3b384c;
   letter-spacing: 0.01cm;
 
+  @media (min-width: 768px) {
+    margin-left: 10px;
+  }
+
   span {
     display: block;
   }
 
   &__name {
-    font-size: clamp(20px, 4vw, 30px);
+    font-size: clamp(24px, 4vw, 30px);
   }
 
   &__description {
