@@ -9,71 +9,47 @@
   flex-direction: column;
 }
 
-.h-tile {
-  position: relative;
-  display: inline-block;
-
-  &__body {
-    position: absolute;
-    bottom: 20px;
-    height: 30%;
-    width: 100%;
-    background-color: var(--bg-color-blue);
-    z-index: -1;
-  }
-
-  &__shadow {
-    position: absolute;
-    bottom: 0em;
-    right: -0.1em;
-    height: 30%;
-    width: 100%;
-    background-image: repeating-linear-gradient(
-      45deg,
-      var(--color-light),
-      var(--color-light) 1px,
-      transparent 1px,
-      transparent 4px
-    );
-    z-index: -2;
-
-    // @media (max-width: 600px) {
-    //   background-image: repeating-linear-gradient(
-    //     45deg,
-    //     #ffffff,
-    //     #00aeff 0.3px,
-    //     transparent 0.3px,
-    //     transparent 1.3px
-    //   );
-    // }
-  }
-}
-
 .title {
-  // font-family: 'Lobster Two', cursive;
-  // font-family: 'Martel Sans', sans-serif;
-  // font-family: 'Martel', serif;
-  // font-family: 'Scheherazade', serif;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Pacifico', cursive;
   font-weight: 400;
-  font-size: clamp(30px, 6vw, 80px);
+  font-size: clamp(33px, 7vw, 80px);
+  color: #3b384c;
 
   span {
     display: block;
   }
 
   &__name {
+    font-size: clamp(20px, 4vw, 30px);
   }
 
   &__description {
+    font-size: clamp(40px, 8vw, 80px);
+
+    strong {
+      font-size: clamp(40px, 7vw, 100px);
+      font-weight: 400;
+      position: relative;
+      z-index: 1;
+
+      &::after {
+        position: absolute;
+        left: 2px;
+        top: 2px;
+        content: attr(data-text);
+        margin-right: -4px;
+        background-image: radial-gradient(
+          #f8dada 0%,
+          #f8dada 60%,
+          transparent 60%
+        );
+        background-size: 2px 2px;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        z-index: -5;
+        display: block;
+        text-shadow: none;
+      }
+    }
   }
-}
-
-.name {
-  font-size: 4vw;
-  font-weight: 400;
-}
-
-.name span {
-  display: block;
 }

@@ -77,19 +77,22 @@ a {
 }
 
 body {
-  background-color: var(--bg-color-blue);
-  color: var(--color-light);
+  // background-color: var(--bg-color-blue);
+  background-color: #99c6da;
+  // color: var(--color-light);
+  color: #120d2f;
 }
 
 body {
   font-family: 'Assistant', sans-serif;
-  font-size: var(--fz-lg);
+  // font-family: 'Noto Sans JP', sans-serif;
+  font-size: var(--fz-xl);
   min-height: 100vh;
   margin: 0;
   line-height: 1.5;
 
   @media (min-width: 48em) {
-    font-size: var(--fz-xl);
+    // font-size: var(--fz-xl);
   }
 }
 

@@ -15,7 +15,9 @@ header {
   top: 0;
   z-index: 10;
   width: 100%;
-  background-color: var(--bg-color-pink);
+  // background-color: var(--bg-color-pink);
+  background-color: rgba(248, 218, 218, 0.75);
+  color: #11475f;
 
   @media (min-width: 768px) {
     font-size: var(--fz-lg);
