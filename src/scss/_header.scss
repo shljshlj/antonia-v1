@@ -25,25 +25,6 @@ header {
   }
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;
-  height: 100%;
-}
-
-.column-xs-12 {
-  grid-column-start: span 12;
-  grid-column-end: span 12;
-}
-
-@media (min-width: 768px) {
-  .column-sm-6 {
-    grid-column-start: span 6;
-    grid-column-end: span 6;
-  }
-}
-
 .navigation {
   padding: 20px 0;
   font-size: var(--fz-md);
