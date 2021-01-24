@@ -50,6 +50,18 @@
   --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
+.meduza {
+  width: 200px;
+  height: 200px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
 html {
   box-sizing: border-box;
 }
