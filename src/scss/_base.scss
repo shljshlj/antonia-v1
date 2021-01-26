@@ -48,18 +48,28 @@
 
   --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
   --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
 
-.meduza {
-  width: 200px;
-  height: 200px;
+  /* london review of books ~ lrb COLOR SCHEME */
 
-  img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
+  --lrb-fc: #494746;
+  --lrb-fc-light: #8f8e84;
+  --lrb-bc: #fafaf7;
+  --lrb-blue: #15395e;
+  --lrb-blue-hover: #17639f;
+  --lrb-footer-c: #172845;
+  --lrb-salmon: #f6e8e0;
+  --lrb-olive: #f4f3e8;
+  --lrb-green: #ddf3e5;
+  --lrb-f-green: #117e62;
+
+  //font sizes
+  --lrb-f-info: 17px / 17px / 16px;
+  //          >1024px / > 600px /  <=600px
+  --lrb-f-title: 50px / 42px / 32px;
+  --lrb-f-subtitle: 46px / 38px / 28px;
+  --lrb-f-body: 20px / 19px / 19px;
+
+  /* END lrb */
 }
 
 html {
@@ -89,17 +99,15 @@ a {
 }
 
 body {
-  // background-color: var(--bg-color-blue);
-  // background-color: #99c6da;
-  // background-color: #fffada;
-  background-color: #ebecf2;
-  // color: var(--color-light);
-  color: #120d2f;
+  // background-color: #ebecf2;
+  // color: #120d2f;
+
+  background-color: var(--lrb-bc);
+  color: var(--lrb-fc);
 }
 
 body {
   font-family: 'Assistant', sans-serif;
-  // font-family: 'Noto Sans JP', sans-serif;
   font-size: var(--fz-xl);
   min-height: 100vh;
   margin: 0;
@@ -176,3 +184,17 @@ p {
   border-bottom: 1px dashed purple;
   padding: 100px 0;
 }
+
+// ANIMATION
+.meduza {
+  width: 200px;
+  height: 200px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+// END animation
