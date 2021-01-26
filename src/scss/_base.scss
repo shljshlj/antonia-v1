@@ -187,16 +187,24 @@ p {
   padding: 100px 0;
 }
 
-// ANIMATION
-.meduza {
+.animation {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.small {
   width: 200px;
   height: 200px;
-
-  img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
 }
-// END animation
+
+.smaller {
+  width: 100px;
+  height: 100px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
