@@ -105,7 +105,8 @@ body {
   // color: #120d2f;
 
   background-color: var(--lrb-bc);
-  color: var(--lrb-fc);
+  // color: var(--lrb-fc);
+  color: #3b384c;
 }
 
 body {
@@ -113,7 +114,7 @@ body {
   font-size: var(--fz-xl);
   min-height: 100vh;
   margin: 0;
-  line-height: 1.5;
+  // line-height: 1.5;
 
   @media (min-width: 48em) {
     // font-size: var(--fz-xl);
@@ -167,7 +168,7 @@ p {
   width: 100%;
   max-width: 1600px;
   min-height: 100vh;
-  padding: 0 25px;
+  padding: 0 40px;
 
   @media (min-width: 480px) {
     padding: 0 50px;
