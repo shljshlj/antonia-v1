@@ -1,0 +1,11 @@
+@font-face {
+    font-family: Margaret;
+    src: url('path/Margaret-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: Margaret;
+    src: url('path/Margaret-Bold.woff') format('woff');
+}
+
+font-family: Margaret, display;
