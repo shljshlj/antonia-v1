@@ -9,8 +9,8 @@ module.exports = merge(common, {
   devtool: false,
   output: {
     path: paths.build,
-    publicPath: '/antonia-website/',
-    filename: '[name].[contentHash].bundle.js',
+    publicPath: '/antonia-v1/',
+    filename: '[name].[contenthash].bundle.js',
   },
   module: {
     rules: [
@@ -28,8 +28,8 @@ module.exports = merge(common, {
     // Extract CSS into separate files
     // Note: style-loader is for development, MiniCssExtractPlugin is for production
     new MiniCssExtractPlugin({
-      filename: '[name].[contentHash].css',
-      chunkFilename: '[id].[contentHash].css',
+      filename: '[name].[contenthash].css',
+      chunkFilename: '[id].[contenthash].css',
     }),
   ],
   optimization: {

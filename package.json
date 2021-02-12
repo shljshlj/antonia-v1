@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Personal website of a nanny living in Berlin",
   "main": "index.js",
-  "repository": "git@github.com:shljshlj/antonia-website.git",
+  "repository": "git@github.com:shljshlj/antonia-v1.git",
   "author": "shljshlj <34565607+shljshlj@users.noreply.github.com>",
   "license": "MIT",
   "private": true,
